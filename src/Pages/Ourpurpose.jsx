@@ -1,8 +1,8 @@
 import React from 'react';
 import '../Css/Ourpurpose.css';
-import jkimg from "src/assets/13584_Comp_JK_Image_OC.jpg";
-import jkmade from "src/assets/13584_Comp_JK_Image_Made.jpg"
-import jkimgmade from "src/assets/13584_Comp_JK_Image_Made.jpg"
+import jkimg from "public/assets/13584_Comp_JK_Image_OC.jpg";
+import jkmade from "public/assets/13584_Comp_JK_Image_Made.jpg"
+import jkimgmade from "public/assets/13584_Comp_JK_Image_Sport.jpg"
 
 
 const Ourpurpose = () => {
