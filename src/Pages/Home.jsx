@@ -128,7 +128,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="image-container">
         <img
-          src="src/assets/NB-3811_Comp_A_9060_Adults_Desktop (1).jpg"
+          src="/assets/NB-3811_Comp_A_9060_Adults_Desktop.jpg"
           alt="background"
           className="background"
         />
@@ -260,7 +260,7 @@ const Home = () => {
 
       <div className="image-container">
         <img
-          src="src/assets/NB-3811_Comp_A_RunFast_Desktop.jpg"
+          src="/assets/NB-3811_Comp_A_RunFast_Desktop.jpg"
           alt="background"
           className="background"
         />
