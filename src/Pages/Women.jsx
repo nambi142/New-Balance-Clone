@@ -29,7 +29,6 @@ const Women = () => {
 }, []);
 
 
-  // ✅ Fix: Define this function to handle navigation
   const handleClick = (id) => {
     navigate(`/product/${id}`);
   };
