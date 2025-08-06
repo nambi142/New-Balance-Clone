@@ -4,14 +4,15 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage"; 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDUEf-57VafAy3GJarSZHJuuF88xwOSLh0",
-  authDomain: "new-balance-63e89.firebaseapp.com",
-  projectId: "new-balance-63e89",
-  storageBucket: "new-balance-63e89.appspot.com",
-  messagingSenderId: "37920168931",
-  appId: "1:37920168931:web:84423e7f23cad8d18c9ed6",
-  measurementId: "G-CS498P8N8L"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
+
 
 const app = initializeApp(firebaseConfig);
 
