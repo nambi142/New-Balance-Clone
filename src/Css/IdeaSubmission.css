@@ -1,0 +1,88 @@
+.idea-submission-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.idea-submission-container h1 {
+  font-size: 26px;
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.idea-submission-container h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.idea-submission-container p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.idea-submission-container ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.idea-submission-container ol li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+a {
+  color: #0047ab;
+  text-decoration: underline;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.note {
+  font-style: italic;
+  color: #333;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .idea-submission-container {
+    padding: 40px 15px;
+  }
+
+  .idea-submission-container h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .idea-submission-container h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .idea-submission-container p,
+  .idea-submission-container ol li {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .idea-submission-container ol {
+    margin-left: 16px;
+  }
+
+  .download-link {
+    font-size: 14px;
+  }
+
+  .note {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,101 @@
+/* Css/OrderSuccess.css */
+.order-success-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: #f5f5f5;
+  margin-top: 100px;
+}
+
+.success-box {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+.success-box h2 {
+  color: #4caf50;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.success-box p {
+  color: #555;
+  font-size: 16px;
+  margin: 10px 0 30px;
+}
+
+.success-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.success-btn:hover {
+  background: #388e3c;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.check-icon {
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.6);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .order-success-page {
+    margin-top: 60px;
+    padding: 20px;
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .success-box {
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+
+  .success-box h2 {
+    font-size: 22px;
+    margin-top: 16px;
+  }
+
+  .success-box p {
+    font-size: 14px;
+    margin: 8px 0 25px;
+  }
+
+  .success-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

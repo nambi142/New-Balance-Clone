@@ -1,0 +1,183 @@
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 40px;
+  font-family: Arial, sans-serif;
+  margin: 10px auto;
+}
+
+/* Shipping Form (Left) */
+.shipping-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+.shipping-form h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.shipping-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.two-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+/* User Info Box */
+.user-box {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.user-box h4 {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+/* Update/Add Links */
+.change-links {
+  margin-bottom: 20px;
+  color: #d32f2f;
+  font-size: 14px;
+}
+
+.change-links span {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.change-links span:hover {
+  text-decoration: underline;
+}
+
+/* payment method */
+.payment-method{
+  padding: 10px;
+
+}
+.payment-method h4{
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: #d32f2f;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #b71c1c;
+}
+
+/* Order Summary (Right) */
+.summary-section {
+  flex: 0.8;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.summary-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.summary-line,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.summary-total strong {
+  font-size: 16px;
+}
+
+/* Product Items */
+.checkout-item {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.checkout-item img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.installments {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .summary-section,
+  .shipping-form {
+    flex: 1 1 100%;
+  }
+}
+
+/* Modal Support */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.modal input {
+  margin-bottom: 10px;
+}

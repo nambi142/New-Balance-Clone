@@ -1,0 +1,219 @@
+/* ========== SIGNUP SECTION ========== */
+.signup {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.signup button {
+  padding: 15px;
+  width: 150px;
+  background-color: #d32f2f;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ========== FOOTER SECTION ========== */
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 60px;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  font-family: Arial, sans-serif;
+}
+
+.footer1 > div {
+  flex: 1 1 100px;
+  margin-bottom: 10px;
+  min-width: 160px;
+}
+
+.footer1 .footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer1 p {
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.footer1 ul {
+  padding: 0;
+  margin: 10px 0 0 0;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.footer1 ul li {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.footer1 ul li:hover {
+  text-decoration: underline;
+}
+
+/* ========== INDEPENDENT SECTION ========== */
+.independet {
+  max-width: 280px;
+  color: #333;
+}
+
+.independet .icon {
+  font-size: 50px;
+  color: #cc0000;
+  margin-bottom: 12px;
+}
+
+.independet p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.external-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.external-links svg {
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.external-links svg:hover {
+  transform: scale(1.1);
+}
+
+/* ========== FOOTER BRAND SECTION ========== */
+.footer2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+}
+
+.footer2 p {
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.footer2 img {
+  height: 24px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.footer2 img:hover {
+  filter: grayscale(0%);
+}
+
+/* ========== COPYRIGHT ========== */
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #000;
+  margin: 10px;
+  padding: 0 10px;
+  line-height: 1.4;
+}
+
+/* ========== MOBILE VIEW ========== */
+@media (max-width: 768px) {
+  .signup {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .signup button {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .footer1 {
+    flex-direction: column;
+    padding: 20px 20px;
+    margin-bottom:  80px;
+  }
+
+  .footer1 > div {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 6px;
+   
+  }
+
+  .footer1 p {
+    margin-bottom: 4px;
+  }
+
+  .footer1 ul li {
+    margin-bottom: 3px;
+  }
+
+  .independet {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .independet .icon {
+    font-size: 40px;
+  }
+
+  .external-links {
+    justify-content: flex-start;
+  }
+
+  .footer2 {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .footer2 p {
+    margin-right: 0;
+    font-size: 13px;
+  }
+
+  .footer2 img {
+    height: 20px;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+}

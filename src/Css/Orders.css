@@ -1,0 +1,293 @@
+.my-account {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #111;
+  margin-top: 10px;
+}
+
+/* Sidebar */
+.side-column {
+  width: 220px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-column div {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.side-column div:hover {
+  color: #bb0628;
+
+}
+
+.side-column button {
+  background: none;
+  border: none;
+  color: #bb0628;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: start;
+}
+
+.side-column button:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.mani-place {
+  flex: 1;
+  padding: 40px;
+}
+
+.orders, .Personal-details, .Payments, .Addresses {
+  margin-bottom: 40px;
+}
+
+.orders h1,
+.Personal-details h1,
+.Payments h1,
+.Addresses h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.orders ul {
+  list-style: none;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.orders ul li {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Personal Details */
+.Personal-details div {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.Personal-details h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.Personal-details p {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.Personal-details button {
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* Payments */
+.Payments button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Payments div {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* Addresses */
+.Addresses div {
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.Addresses button{
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #d32f2f;
+  background-color: #d32f2f;
+  color: #fff;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 999;
+}
+
+/* Modal Box */
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.modal button {
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #d32f2f;
+  background-color: #d32f2f;
+  color: #fff;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .my-account {
+    flex-direction: column;
+  }
+
+  .side-column {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .side-column div,
+  .side-column button {
+    font-size: 14px;
+    padding: 6px 10px;
+    text-align: center;
+    flex: 1 0 40%;
+  }
+
+  .mani-place {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .side-column {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-column div,
+  .side-column button {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 0;
+  }
+
+  .mani-place {
+    padding: 15px;
+  }
+
+  .orders h1,
+  .Personal-details h1,
+  .Payments h1,
+  .Addresses h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .orders ul,
+  .Personal-details div,
+  .Payments div,
+  .Addresses div {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .Payments button,
+  .Personal-details button,
+  .Addresses button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .modal {
+    padding: 20px;
+  }
+
+  .modal input,
+  .modal textarea {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .modal button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .close-btn {
+    font-size: 18px;
+  }
+}

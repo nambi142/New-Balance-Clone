@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Proxima Nova W01", "Helvetica Neue", sans-serif;
+  
+}
+/* Prevent horizontal scrolling on entire site */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}

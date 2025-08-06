@@ -1,0 +1,43 @@
+.accessibility-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.accessibility-container h1 {
+  font-size: 26px;
+  color: #d32f2f;
+  margin-bottom: 25px;
+}
+
+.accessibility-container p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.accessibility-container a {
+  color: #0047ab;
+  text-decoration: underline;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .accessibility-container {
+    padding: 40px 15px;
+  }
+
+  .accessibility-container h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .accessibility-container p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+}

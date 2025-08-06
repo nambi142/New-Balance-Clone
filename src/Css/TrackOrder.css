@@ -1,0 +1,113 @@
+.track-order-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-family: Arial, sans-serif;
+}
+
+.track-order-container h1 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.track-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.track-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.track-form button {
+  padding: 12px;
+  background-color: #d32f2f;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.track-form button:hover {
+  background-color: #b71c1c;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.order-details {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.order-details h2 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.order-details h2 span {
+  color: green;
+}
+
+.order-details p {
+  margin: 5px 0;
+}
+
+.order-details ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+@media (max-width: 600px) {
+  .track-order-container {
+    margin: 30px 15px;
+    padding: 30px 15px;
+  }
+
+  .track-order-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .track-form input,
+  .track-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .error {
+    font-size: 0.9rem;
+    margin-top: 12px;
+  }
+
+  .order-details {
+    padding: 15px;
+    margin-top: 25px;
+  }
+
+  .order-details h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .order-details p,
+  .order-details ul li {
+    font-size: 0.9rem;
+  }
+}

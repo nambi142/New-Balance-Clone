@@ -1,0 +1,486 @@
+/* ===================== Hero Section ===================== */
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.background {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px  auto;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.overlay-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.overlay-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.overlay-content button {
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ===================== Categories Grid ===================== */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding: 100px 10px 20px;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.category-card img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  display: block;
+}
+
+.category-card .label {
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  font-family: "Lora", serif;
+}
+
+/* ===================== Trending Section ===================== */
+.trendings {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.trendings h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* ===================== Tabs ===================== */
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  background-color: #ececec;
+  padding: 12px 10px;
+  border-radius: 8px;
+  max-width: fit-content;
+  height: 60px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-item {
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 10px 60px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #000;
+}
+
+.tab-item.active {
+  background-color: #fff;
+  color: #000;
+  border-color: #ccc;
+}
+
+/* ===================== Carousel ===================== */
+.products-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0 10px;
+}
+
+.products-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 10px 20px;
+  scrollbar-width: none;
+}
+
+.products-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 360px;
+  height: 400px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fa1111;
+}
+
+/* ===================== Scroll Buttons ===================== */
+.scroll-button {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: #000000ab;
+  color: #fff;
+  width: 35px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+/* ===================== Scroll Button & Progress ===================== */
+.scroll-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.scroll-bar {
+  position: relative;
+  width: 300px;
+  height: 6px;
+  background-color: #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.scroll-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #333;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.shop-button {
+  padding: 10px 20px;
+  border: 2px solid rgb(117, 116, 116);
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===================== Shop by category ===================== */
+.shop-by-category {
+  margin-bottom: 50px;
+}
+
+.shop-by-category h2 {
+  margin-left: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.shop-img {
+  display: flex;
+}
+
+.shop-img a{
+  text-decoration: none;
+ 
+}
+
+.shop-img a p {
+  transition: color 0.3s ease;
+}
+
+.shop-img a:hover p {
+  color: #d32f2f;
+}
+
+.shop-img img {
+  width: 450px;
+  height: 800px;
+  padding: 12px;
+}
+
+.shop-img p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+ 
+
+/* ===================== Recommended Products ===================== */
+.recommended {
+  padding: 60px 12px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.recommended h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.recommended-images {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 12px;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.recommended-images::-webkit-scrollbar {
+  display: none;
+}
+
+.recommended-images a {
+  text-decoration: none;
+  color: inherit;
+  flex: 0 0 auto;
+  width: 250px;
+  scroll-snap-align: start;
+}
+
+.recommended-images a > div {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.recommended-images a > div:hover {
+  transform: translateY(-4px);
+}
+
+.recommended-images img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.recommended-images .product {
+  font-weight: 600;
+  font-size: 15px;
+  color: #111;
+  margin: 0;
+}
+
+.recommended-images .price{
+  color: red;
+}
+
+@media (max-width: 768px) {
+  /* HERO SECTION */
+ 
+  /* Default (desktop): overlay on image */
+.overlay-content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+/* Mobile: make overlay normal block below image */
+@media (max-width: 768px) {
+  .overlay-content {
+    position: static;
+    text-align: center;
+    margin-top: 12px;
+    padding: 0 12px;
+  }
+
+  .overlay-content h1 {
+    font-size: 28px;
+  }
+
+  .overlay-content p {
+    font-size: 16px;
+  }
+
+  .overlay-content button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+  .overlay-content a{
+    text-decoration: none;
+  }
+
+  .background {
+    width: 100%;
+    height: auto;
+  }
+
+  /* CATEGORY GRID */
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 40px 10px;
+  }
+
+  .category-card .label {
+    font-size: 1.2rem;
+    bottom: 40%;
+    left: 20%;
+  }
+
+  /* CATEGORY TABS */
+  .category-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .tab-item {
+    flex: 0 0 auto;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  /* PRODUCT CAROUSEL */
+  .product-card {
+    width: 200px;
+    height: 200px;
+    font-size: 18px;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  .product-card .price {
+    font-size: 18px;
+  }
+
+  
+  /* SHOP BY CATEGORY */
+  .shop-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-img img {
+    width: 100%;
+    height: auto;
+    padding: 6px;
+  }
+
+  .shop-img p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  /* RECOMMENDED PRODUCTS */
+  .recommended {
+    padding: 30px 10px;
+  }
+
+  .recommended h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .recommended-images a {
+    width: 200px;
+  }
+
+  .recommended-images img {
+    height: 180px;
+  }
+
+  .recommended-images .product {
+    font-size: 14px;
+  }
+
+  .recommended-images .price {
+    font-size: 14px;
+  }
+
+  /* SCROLL FOOTER BAR */
+  .scroll-bar {
+    width: 200px;
+  }
+
+  /* SHOP BUTTON */
+  .shop-button a {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: block;
+  }
+}

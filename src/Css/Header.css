@@ -1,0 +1,194 @@
+/* ===== Base Reset ===== */
+
+
+/* ===== Navbar 1 (Top Black Bar) ===== */
+.navbar-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 48px;
+  padding: 0 40px;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  z-index: 2000;
+  overflow: visible;
+  height: 50px;
+}
+
+/* ===== Location Area ===== */
+.location {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.location-find {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.location-find:hover {
+  text-decoration: underline;
+}
+
+.pipe-divider {
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+/* ===== Promo Slider ===== */
+.promo-text-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.promo-text-wrapper.hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: fit-content;
+}
+
+.slide-text {
+  min-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+
+/* ===== Dots ===== */
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px ;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.4); /* subtle inactive dot */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot:hover {
+  background-color: #ffffffb3;
+}
+
+.dot.active {
+  background-color: #ffffff;
+  transform: scale(1.3); /* emphasize active */
+}
+
+/* ===== Right Side (Language + Help) ===== */
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+/* ===== Selectors (Lang + Help) ===== */
+.language-selector,
+.help-selector {
+  position: relative;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.language-selector:hover,
+.help-selector:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.selector-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.arrow {
+  font-size: 10px;
+}
+
+/* ===== Dropdown Menu ===== */
+.dropdown {
+  position: fixed; 
+  top: 48px;        
+  background: white;
+  color: black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 3000; 
+}
+
+
+.language-option,
+.help-option {
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.language-option:hover,
+.help-option:hover {
+  background-color: #f2f2f2;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+
+ 
+  .navbar-1 {
+    justify-content: center;
+    height: auto;
+    padding: 0;
+  }
+
+  .location,
+  .right-side {
+    display: none;
+  }
+
+  .promo-text-wrapper {
+    position: relative;
+    transform: none;
+    left: 0;
+  }
+
+ 
+}

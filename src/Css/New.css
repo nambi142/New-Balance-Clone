@@ -1,0 +1,159 @@
+/* Container for the full product section */
+.new-page {
+  padding: 20px; /* reduced padding on all sides */
+  background-color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin-top: 20px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Optional section title */
+.section-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+/* Product card */
+.product-cards {
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
+  height: auto;
+}
+
+/* Image wrapper */
+.product-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-image,
+.secondary-image {
+  width: 110%;
+  height: 110%;
+  object-fit: cover; /* fills space better */
+  transition: opacity 0.4s ease;
+}
+
+.secondary-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.product-image-wrapper:hover .primary-image {
+  opacity: 0;
+}
+
+.product-image-wrapper:hover .secondary-image {
+  opacity: 1;
+}
+
+/* "New" tag */
+.tag-new {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  font-size: 11px;
+  background-color: #000;
+  color: #fff;
+  padding: 3px 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+/* Product info */
+.product-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+/* Product title & type */
+.product-name,
+.product-type {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+/* Price */
+.product-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #bd0808;
+}
+
+/* ============ Responsive Breakpoints ============ */
+
+/* Tablets: 2 columns */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Mobiles: 2 columns, no margin */
+@media (max-width: 768px) {
+  .new-page {
+    padding: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px; /* tighter grid */
+  }
+
+  .product-card {
+    height: auto;
+    border: 1px solid #e0e0e0;
+  }
+
+  .primary-image,
+  .secondary-image {
+    width: 120%;
+    height: 120%;
+  }
+
+  .product-name,
+  .product-type {
+    font-size: 14px;
+  }
+
+  .product-price {
+    font-size: 13px;
+  }
+
+  .product-info {
+    padding: 6px;
+  }
+}
+
+

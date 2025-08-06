@@ -1,0 +1,141 @@
+.contact-page {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 100px auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.contact-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-info h2 {
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #d32f2f;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d32f2f;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 12px;
+  background: #d32f2f;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #b71c1c;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 20px 10px;
+    margin: 50px auto;
+  }
+
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-header p {
+    font-size: 0.95rem;
+  }
+
+  .contact-content {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+}

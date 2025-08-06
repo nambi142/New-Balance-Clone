@@ -1,0 +1,280 @@
+/* ========= DESKTOP STYLES ========= */
+
+.navbar-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: white;
+  z-index: 1100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease;
+}
+
+/* Left Section */
+.items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Logo/Icon */
+.icon {
+  font-size: 50px;
+  color: #d32f2f;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Right Section */
+.items-2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+/* Icons */
+.ac-icon,
+.cart {
+  font-size: 24px;
+  color: #000;
+}
+
+/* Cart Count */
+.cart-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Nav Labels */
+.nav-label {
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.nav-label:hover {
+  border-bottom: 2px solid #d32f2f;
+}
+
+.red-label {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+/* Dropdown Menu */
+.nav-hover-wrapper {
+  position: relative;
+}
+
+.dropdown-wrapper {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.dropdown-images {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 auto;
+  padding: 5px;
+  width: 1200px;
+}
+
+.dropdown-images li {
+  flex: 1;
+  max-width: 200px;
+  padding: 5px 3px;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-images img {
+  width: 130%;
+  height: auto;
+  padding: 10px;
+}
+
+.dropdown-images li a p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-images p:hover {
+  cursor: pointer;
+}
+
+/* ======= MOBILE VIEW ONLY ======= */
+@media (max-width: 768px) {
+  .navbar-2,
+  .items,
+  .items-2 {
+    display: none !important;
+  }
+
+  .mobile-navbar,
+  .mobile-sidebar {
+    display: block !important;
+    position: relative; /* or fixed/absolute depending on your layout */
+    z-index: 1000;
+  }
+}
+
+/* ======= DESKTOP VIEW ONLY ======= */
+@media (min-width: 769px) {
+  .mobile-navbar,
+  .mobile-sidebar {
+    display: none !important;
+    visibility: hidden;
+    position: absolute; /* hide it completely from layout flow */
+    z-index: -1; /* ensure it’s behind everything */
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .navbar-2,
+  .items,
+  .items-2 {
+    display: flex !important;
+  }
+}
+
+
+
+  /* ==== Show Mobile Only ==== */
+  .mobile-navbar {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 16px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .mobile-left .mobile-icon{
+    padding: 2px;
+    font-size:30px;
+  }
+
+  .mobile-logo {
+    font-size: 50px;
+    color: #d32f2f;
+  }
+
+  .mobile-right-icons {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .cart-container .cart{
+    color: #000;
+  }
+
+ /* ====== Overlay ====== */
+.mobile-sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2400;
+}
+
+/* ====== Sidebar Panel ====== */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2500;  
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  animation: slideIn 0.3s ease forwards;
+}
+
+/* Slide-in animation from left */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* ====== Header inside Sidebar ====== */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ====== Close Icon ====== */
+.close-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* ====== Sidebar Links ====== */
+.mobile-sidebar a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  display: block;
+  padding: 10px 0;
+}
+
+/* Highlighted/Red label link */
+.mobile-sidebar .red-label {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+
+  

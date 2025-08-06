@@ -1,0 +1,52 @@
+
+[
+  {
+    "name": "FuelCell Rebel v5",
+    "price": 139.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "images": [
+      "public/productview/mfcxly5_nb_02_i.webp",
+      "public/productview/mfcxly5_nb_03_i.webp",
+      "public/productview/mfcxly5_nb_04_i.webp",
+      "public/productview/mfcxly5_nb_06_i.webp",
+      "public/productview/mfcxly5_nb_14_i.webp",
+      "public/productview/mfcxly5_nb_16_i.webp"
+    ]
+  },
+  {
+    "name": "Coastal Fleece Crew",
+    "price": 79.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "images": [
+      "public/productview/wt51514ag_nb_50_i.webp",
+      "public/productview/wt51514ag_nb_55_i.webp",
+      "public/productview/wt51514ag_nb_71_i.webp",
+      "public/productview/wt51514ag_nb_72_i.webp"
+    ]
+  },
+  {
+    "name": "471",
+    "price": 99.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "images": [
+      "public/productview/u471kac_nb_02_i.webp",
+      "public/productview/u471kac_nb_03_i.webp",
+      "public/productview/u471kac_nb_04_i.webp",
+      "public/productview/u471kac_nb_06_i.webp",
+      "public/productview/u471kac_nb_07_i.webp",
+      "public/productview/u471kac_nb_16_i.webp"
+    ]
+    
+  },
+  {
+    "name": "530",
+    "price": 99.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "images": [
+      "public/productview/u530esa_nb_02_i.webp",
+      "public/productview/u530esa_nb_03_i.webp",
+      "public/productview/u530esa_nb_04_i.webp",
+      "public/productview/u530esa_nb_06_i.webp"
+    ]
+  }
+]
