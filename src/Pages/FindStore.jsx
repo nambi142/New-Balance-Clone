@@ -1,13 +1,12 @@
 // src/pages/FindStore.jsx
-import React from 'react';
-import '../Css/FindStore.css';
-import '../Css/FindStore.css';
-import heroImg from '../assets/Microsoft_Teams-image_2.webp';
-import returnsImg from '../assets/Rectangle_30.png';
-import fittedImg from '../assets/Rectangle_32.png';
-import footscanImg from '../assets/D_CompX_slot3.webp';
-import pickupImg from '../assets/D_CompX_slot4.webp';
-
+import React from "react";
+import "../Css/FindStore.css";
+import "../Css/FindStore.css";
+import heroImg from "../assets/Microsoft_Teams-image_2.webp";
+import returnsImg from "../assets/Rectangle_30.png";
+import fittedImg from "../assets/Rectangle_32.png";
+import footscanImg from "../assets/D_CompX_slot3.webp";
+import pickupImg from "../assets/D_CompX_slot4.webp";
 
 const FindStore = () => {
   return (
@@ -31,7 +30,9 @@ const FindStore = () => {
       <div className="store-services">
         <h2>In Store Services</h2>
         <p>
-          At New Balance stores, you will find a comprehensive selection of footwear and apparel. We specialize in personalized, one-on-one service to help you find the perfect fit.
+          At New Balance stores, you will find a comprehensive selection of
+          footwear and apparel. We specialize in personalized, one-on-one
+          service to help you find the perfect fit.
         </p>
         <div className="service-cards">
           <div className="card">

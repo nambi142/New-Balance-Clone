@@ -3,6 +3,8 @@ import "../Css/Home.css";
 import { Link } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../Pages/firebase";
+import adultimport from "/assets/NB-3811_Comp_A_9060_Adults_Desktop.jpg"
+import rcshorts from "public/image/NB-3811_Comp_I1_Image_RCShorts.jpg"
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("women");
@@ -128,7 +130,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="image-container">
         <img
-          src="/assets/NB-3811_Comp_A_9060_Adults_Desktop.jpg"
+          src={adultimport}
           alt="background"
           className="background"
         />
@@ -241,7 +243,7 @@ const Home = () => {
           </div>
           <div>
             <Link to={"/Men"}><img
-              src="public/image/NB-3811_Comp_I1_Image_RCShorts.jpg"
+              src={rcshorts}
               alt="image"
               className="shopby"
             />
