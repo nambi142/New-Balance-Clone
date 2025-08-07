@@ -9,7 +9,7 @@
   width: 100%;
   height: auto;
   display: block;
-  margin: 10px  auto;
+  margin-top: 70px ;
 }
 
 .overlay-content {
@@ -23,7 +23,7 @@
 .overlay-content h1 {
   font-size: 48px;
   margin-bottom: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
 }
 
 .overlay-content p {
@@ -81,7 +81,7 @@
 }
 
 .trendings h2 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 15px;
   color: #222;

@@ -15,7 +15,7 @@
   position: relative;
   z-index: 2000;
   overflow: visible;
-  height: 50px;
+ 
 }
 
 /* ===== Location Area ===== */
@@ -175,7 +175,6 @@
  
   .navbar-1 {
     justify-content: center;
-    height: auto;
     padding: 0;
   }
 
