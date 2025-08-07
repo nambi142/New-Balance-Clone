@@ -102,9 +102,9 @@ const Footer = () => {
 
       <div className="footer2">
         <p>New Balance family of brands</p>
-        <Link to="https://www.brine.com/"><img src="public/image/brine-logo.jpg" alt="Brine" /></Link>
-        <Link to="https://www.warrior.com/"><img src="public/image/warror.jpg" alt="Warrior" /></Link>
-        <Link to="https://www.newbalanceteam.com/"><img src="public/image/teamsports-logo.jpg" alt="Team Sports" /></Link>
+        <Link to="https://www.brine.com/"><img src="/image/brine-logo.jpg" alt="Brine" /></Link>
+        <Link to="https://www.warrior.com/"><img src="/image/warror.jpg" alt="Warrior" /></Link>
+        <Link to="https://www.newbalanceteam.com/"><img src="/image/teamsports-logo.jpg" alt="Team Sports" /></Link>
       </div>
 
       <div className="copyright">

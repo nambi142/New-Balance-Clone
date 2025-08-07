@@ -30,7 +30,15 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar-2" style={{ top: scrolled ? "0px" : "40px" }}>
+      <nav
+        className="navbar-2"
+        style={{
+          top: scrolled ? "0px" : "40px",
+          position: "fixed",
+          width: "100%",
+          zIndex: 1000,
+        }}
+      >
         {/* ======= Desktop Navbar ======= */}
         <div className="items">
           <SiNewbalance className="icon" />
@@ -86,54 +94,62 @@ const Navbar = () => {
           onMouseLeave={() => handleMouseLeave(setNewOpen, newTimeout)}
         >
           <ul className="dropdown-images">
-              <li>
-                <Link to="/Backtoschool">
-                  <img
-                    src="/image/NB-3811_Comp_VizNav_BTS.jpg"
-                    alt="Back to School"
-                  />
-                  <p>Back to school</p>
-                </Link>
-              </li>
-              <li>
-                <Link to="/Men">
-                  <img
-                    src="/image/NB-3811_Comp_VizNav_MenNewArrivals.jpg"
-                    alt="Men"
-                  />
-                  <p>Men’s new arrivals</p>
-                </Link>
-              </li>
-              <li>
-                <Link to="/Women">
-                  <img
-                    src="/image/NB-3811_Comp_VizNav_WomenNewArrivals.jpg"
-                    alt="Women"
-                  />
-                  <p>Women’s new arrivals</p>
-                </Link>
-              </li>
-              <li>
-                <Link to="/Kids">
-                  <img
-                    src="/image/NB-3811_Comp_VizNav_KidsNewArrivals.jpg"
-                    alt="Kids"
-                  />
-                  <p>Kids’ new arrivals</p>
-                </Link>
-              </li>
-              <li>
-                <Link to="/New">
-                  <img src="/image/NB2966_Comp_NBC_Image1.jpg" alt="Launch" />
-                  <p>Launch calendar</p>
-                </Link>
-              </li>
+            <li>
+              <Link to="/Backtoschool">
+                <img
+                  src="/image/NB-3811_Comp_VizNav_BTS.jpg"
+                  alt="Back to School"
+                />
+                <p>Back to school</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="/Men">
+                <img
+                  src="/image/NB-3811_Comp_VizNav_MenNewArrivals.jpg"
+                  alt="Men"
+                />
+                <p>Men’s new arrivals</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="/Women">
+                <img
+                  src="/image/NB-3811_Comp_VizNav_WomenNewArrivals.jpg"
+                  alt="Women"
+                />
+                <p>Women’s new arrivals</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="/Kids">
+                <img
+                  src="/image/NB-3811_Comp_VizNav_KidsNewArrivals.jpg"
+                  alt="Kids"
+                />
+                <p>Kids’ new arrivals</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="/New">
+                <img src="/image/NB2966_Comp_NBC_Image1.jpg" alt="Launch" />
+                <p>Launch calendar</p>
+              </Link>
+            </li>
           </ul>
         </div>
       )}
 
       {/* ====== Mobile Navbar ====== */}
-      <div className="mobile-navbar">
+      <div
+        className="mobile-navbar"
+        style={{
+          top: scrolled ? "0px" : "40px",
+          position: "fixed",
+          width: "100%",
+          zIndex: 1000,
+        }}
+      >
         <div className="mobile-left">
           <FiMenu
             className="mobile-icon"
@@ -199,7 +215,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
