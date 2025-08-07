@@ -3,7 +3,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 90px auto;
   padding: 0 20px;
   gap: 30px;
   font-family: Arial, sans-serif;
@@ -87,10 +87,11 @@
   justify-content: space-between;
 }
 
-.price {
+.price-cart {
   font-size: 16px;
   font-weight: bold;
   margin-top: 8px;
+  color: #d71920;
 }
 
 .remove-btn {
@@ -199,7 +200,7 @@
   .cart-page {
     flex-direction: column;
     padding: 0 16px;
-    margin-top: 60px;
+    margin-top: 80px;
     position: relative;
     padding-bottom: 160px; /* to prevent content hiding under fixed buttons */
   }
@@ -262,7 +263,7 @@
 
   .price-remove {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
   }

@@ -3,7 +3,7 @@
   padding: 20px; /* reduced padding on all sides */
   background-color: #fff;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  margin-top: 20px;
+  margin-top: 60px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -13,7 +13,7 @@
 .section-title {
   font-size: 26px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 /* Grid layout */

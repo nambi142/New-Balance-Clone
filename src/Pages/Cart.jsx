@@ -69,7 +69,7 @@ const Cart = () => {
               <p className="excluded-text">Excluded from promotions</p>
             </div>
             <div className="price-remove">
-              <p className="price">
+              <p className="price-cart">
                 ${(item.price * item.quantity).toFixed(2)}
               </p>
               <button className="remove-btn" onClick={() => removeItem(index)}>
