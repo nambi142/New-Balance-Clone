@@ -202,7 +202,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 40px;
-  color: white;
+  color: #fff;
   background: none;
   border: none;
   cursor: pointer;
@@ -503,6 +503,10 @@
     margin-top: 60px;
   }
 
+  .next-button,
+  .prev-button {
+  color: #000;
+  }
   .product-top {
     flex-direction: column;
   }
