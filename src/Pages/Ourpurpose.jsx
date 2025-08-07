@@ -1,9 +1,5 @@
 import React from 'react';
 import '../Css/Ourpurpose.css';
-import jkimg from "public/assets/13584_Comp_JK_Image_OC.jpg";
-import jkmade from "public/assets/13584_Comp_JK_Image_Made.jpg"
-import jkimgmade from "public/assets/13584_Comp_JK_Image_Sport.jpg"
-
 
 const Ourpurpose = () => {
   return (
@@ -16,7 +12,7 @@ const Ourpurpose = () => {
       </section>
 
       <section className="section">
-        <img src={jkimg} alt="Group of kids" />
+        <img src="/assets/13584_Comp_JK_Image_OC.jpg" alt="Group of kids" />
         <div className="section-text">
           <h2>Our Communities</h2>
           <p>
@@ -26,7 +22,7 @@ const Ourpurpose = () => {
       </section>
 
       <section className="section reverse">
-        <img src={jkmade} alt="Kids on court" />
+        <img src="/assets/13584_Comp_JK_Image_Made.jpg" alt="Kids on court" />
         <div className="section-text">
           <h2>Sport Culture</h2>
           <p>
@@ -36,7 +32,7 @@ const Ourpurpose = () => {
       </section>
 
       <section className="section">
-        <img src={jkimgmade} alt="Woman in factory" />
+        <img src="/assets/13584_Comp_JK_Image_Sport.jpg" alt="Woman in factory" />
         <div className="section-text">
           <h2>Responsibly Made</h2>
           <p>

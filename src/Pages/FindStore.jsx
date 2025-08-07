@@ -1,12 +1,10 @@
-// src/pages/FindStore.jsx
 import React from "react";
 import "../Css/FindStore.css";
-import "../Css/FindStore.css";
-import heroImg from "../assets/Microsoft_Teams-image_2.webp";
-import returnsImg from "../assets/Rectangle_30.png";
-import fittedImg from "../assets/Rectangle_32.png";
-import footscanImg from "../assets/D_CompX_slot3.webp";
-import pickupImg from "../assets/D_CompX_slot4.webp";
+import heroImg from "/assets/Microsoft_Teams-image_2.webp";
+import returnsImg from "/assets/Rectangle_30.png";
+import fittedImg from "/assets/Rectangle_32.png";
+import footscanImg from "/assets/D_CompX_slot3.webp";
+import pickupImg from "/assets/D_CompX_slot4.webp";
 
 const FindStore = () => {
   return (

@@ -3,14 +3,11 @@ import "../Css/Home.css";
 import { Link } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../Pages/firebase";
-import adultimport from "/assets/NB-3811_Comp_A_9060_Adults_Desktop.jpg"
-import rcshorts from "public/image/NB-3811_Comp_I1_Image_RCShorts.jpg"
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("women");
   const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRecommendedLeftArrow, setShowRecommendedLeftArrow] =
-    useState(false);
+  const [showRecommendedLeftArrow, setShowRecommendedLeftArrow] = useState(false);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -88,12 +85,8 @@ const Home = () => {
     const container = document.getElementById("scrollContainer");
     const progress = document.getElementById("scrollProgress");
 
-    const recommendedContainer = document.getElementById(
-      "recommendedScrollContainer"
-    );
-    const recommendedProgress = document.getElementById(
-      "recommendedScrollProgress"
-    );
+    const recommendedContainer = document.getElementById("recommendedScrollContainer");
+    const recommendedProgress = document.getElementById("recommendedScrollProgress");
 
     if (container && progress) {
       const updateScrollState = () => {
@@ -109,19 +102,14 @@ const Home = () => {
 
     if (recommendedContainer && recommendedProgress) {
       const updateRecommendedScroll = () => {
-        const scrollWidth =
-          recommendedContainer.scrollWidth - recommendedContainer.clientWidth;
+        const scrollWidth = recommendedContainer.scrollWidth - recommendedContainer.clientWidth;
         const scrollLeft = recommendedContainer.scrollLeft;
         const scrolled = (scrollLeft / scrollWidth) * 100;
         recommendedProgress.style.width = `${scrolled}%`;
         setShowRecommendedLeftArrow(scrollLeft > 0);
       };
       recommendedContainer.addEventListener("scroll", updateRecommendedScroll);
-      return () =>
-        recommendedContainer.removeEventListener(
-          "scroll",
-          updateRecommendedScroll
-        );
+      return () => recommendedContainer.removeEventListener("scroll", updateRecommendedScroll);
     }
   }, []);
 
@@ -129,15 +117,11 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <div className="image-container">
-        <img
-          src={adultimport}
-          alt="background"
-          className="background"
-        />
+        <img src="/assets/NB-3811_Comp_A_9060_Adults_Desktop.jpg" alt="background" className="background" />
         <div className="overlay-content">
           <h1>The 9060</h1>
           <p>Modern Expressionism</p>
-          <Link to={"/New"}>
+          <Link to="/New">
             <button type="button" className="button">Shop Now</button>
           </Link>
         </div>
@@ -198,11 +182,7 @@ const Home = () => {
           )}
           <div className="products-carousel" id="scrollContainer">
             {productsByTab[activeTab].map((item, idx) => (
-              <Link
-                to={`/product/${item.id}`}
-                key={idx}
-                className="product-card"
-              >
+              <Link to={`/product/${item.id}`} key={idx} className="product-card">
                 <img src={item.images[0]} alt={item.name} />
                 <p>{item.name}</p>
                 <p>{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</p>
@@ -217,64 +197,55 @@ const Home = () => {
           <div className="scroll-footer">
             <div
               className="scroll-bar"
-              onClick={(e) =>
-                handleProgressClick(e, "scrollContainer", "scrollProgress")
-              }
+              onClick={(e) => handleProgressClick(e, "scrollContainer", "scrollProgress")}
             >
               <div className="scroll-progress" id="scrollProgress"></div>
             </div>
-            <Link to={"/New"}><button type="button" className="shop-button">
-              Shop all
-            </button></Link>
+            <Link to="/New">
+              <button type="button" className="shop-button">Shop all</button>
+            </Link>
           </div>
         </div>
       </div>
 
+      {/* Shop by Category */}
       <div className="shop-by-category">
         <h2>Shop by category</h2>
         <div className="shop-img">
           <div>
-            <Link to={"/Women"}><img
-              src="/public/image/NB-3811_Comp_I1_Image_WomenRunning.jpg"
-              alt="image"
-              className="shopby"
-            />
-            <p>Women's Collection</p></Link>
+            <Link to="/Women">
+              <img src="/image/NB-3811_Comp_I1_Image_WomenRunning.jpg" alt="Women's" className="shopby" />
+              <p>Women's Collection</p>
+            </Link>
           </div>
           <div>
-            <Link to={"/Men"}><img
-              src={rcshorts}
-              alt="image"
-              className="shopby"
-            />
-            <p>Men's collection</p></Link>
+            <Link to="/Men">
+              <img src="/image/NB-3811_Comp_I1_Image_RCShorts.jpg" alt="Men's" className="shopby" />
+              <p>Men's Collection</p>
+            </Link>
           </div>
           <div>
-            <Link to={"/Kids"}><img
-              src="/public/image/NB-3811_Comp_I1_Image_Kids.jpg"
-              alt="image"
-              className="shopby"
-            />
-            <p>Kids</p></Link>
+            <Link to="/Kids">
+              <img src="/image/NB-3811_Comp_I1_Image_Kids.jpg" alt="Kids" className="shopby" />
+              <p>Kids</p>
+            </Link>
           </div>
         </div>
       </div>
 
+      {/* Second Hero Section */}
       <div className="image-container">
-        <img
-          src="/assets/NB-3811_Comp_A_RunFast_Desktop.jpg"
-          alt="background"
-          className="background"
-        />
+        <img src="/assets/NB-3811_Comp_A_RunFast_Desktop.jpg" alt="background" className="background" />
         <div className="overlay-content">
           <h1>We're back</h1>
           <p>Essentials for running and performance.</p>
-          <Link to={"/Clothing"}>
+          <Link to="/Clothing">
             <button type="button" className="button">Shop Now</button>
           </Link>
         </div>
       </div>
 
+      {/* Recommended Section */}
       <div className="recommended">
         <h2>Recommended for you</h2>
 
@@ -282,9 +253,7 @@ const Home = () => {
           <button
             className="scroll-button left"
             onClick={() => {
-              const container = document.getElementById(
-                "recommendedScrollContainer"
-              );
+              const container = document.getElementById("recommendedScrollContainer");
               if (container) {
                 container.scrollLeft -= 300;
                 setShowRecommendedLeftArrow(container.scrollLeft > 0);
@@ -311,9 +280,7 @@ const Home = () => {
         <button
           className="scroll-button right"
           onClick={() => {
-            const container = document.getElementById(
-              "recommendedScrollContainer"
-            );
+            const container = document.getElementById("recommendedScrollContainer");
             if (container) {
               container.scrollLeft += 300;
               setShowRecommendedLeftArrow(container.scrollLeft > 0);
@@ -327,17 +294,10 @@ const Home = () => {
           <div
             className="scroll-bar"
             onClick={(e) =>
-              handleProgressClick(
-                e,
-                "recommendedScrollContainer",
-                "recommendedScrollProgress"
-              )
+              handleProgressClick(e, "recommendedScrollContainer", "recommendedScrollProgress")
             }
           >
-            <div
-              className="scroll-progress"
-              id="recommendedScrollProgress"
-            ></div>
+            <div className="scroll-progress" id="recommendedScrollProgress"></div>
           </div>
         </div>
       </div>
