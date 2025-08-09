@@ -15,9 +15,12 @@
 .overlay-content {
   position: absolute;
   top: 30%;
-  left: 10%;
-  color: #000;
-  font-family: Arial, sans-serif;
+  left: 30px;
+  color: #fff;
+  font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 .overlay-content h1 {
@@ -39,6 +42,7 @@
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  width: 200px;
 }
 
 /* ===================== Categories Grid ===================== */
@@ -349,7 +353,10 @@
   top: 30%;
   left: 10%;
   color: #000;
-  font-family: Arial, sans-serif;
+  font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 /* Mobile: make overlay normal block below image */
@@ -359,6 +366,10 @@
     text-align: center;
     margin-top: 12px;
     padding: 0 12px;
+    font-family: "Texturina", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
   }
 
   .overlay-content h1 {

@@ -5,7 +5,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "../Pages/firebase";
 
 const Home = () => {
-  const [activeTab, setActiveTab] = useState("women");
+  const [activeTab, setActiveTab] = useState("women");  
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRecommendedLeftArrow, setShowRecommendedLeftArrow] = useState(false);
   const [products, setProducts] = useState([]);
@@ -117,10 +117,10 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <div className="image-container">
-        <img src="/assets/NB-3811_Comp_A_9060_Adults_Desktop.jpg" alt="background" className="background" />
+        <img src="/assets/NB-4880_Comp_A1_Desktop.jpg" alt="background" className="background" />
         <div className="overlay-content">
-          <h1>The 9060</h1>
-          <p>Modern Expressionism</p>
+          <h1>A New Balance Exclusive</h1>
+          <p>The Earth Shadow Pack, available August 8th</p>
           <Link to="/New">
             <button type="button" className="button">Shop Now</button>
           </Link>
@@ -188,7 +188,7 @@ const Home = () => {
                 <p>{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</p>
                 <p className="price">${item.price}</p>
               </Link>
-            ))}
+            ))}   
           </div>
           <button className="scroll-button right" onClick={handleScrollRight}>
             {">"}
@@ -235,7 +235,7 @@ const Home = () => {
 
       {/* Second Hero Section */}
       <div className="image-container">
-        <img src="/assets/NB-3811_Comp_A_RunFast_Desktop.jpg" alt="background" className="background" />
+        <img src="/assets/NB-4880_Comp_A2_Desktop.jpg" alt="background" className="background" />
         <div className="overlay-content">
           <h1>We're back</h1>
           <p>Essentials for running and performance.</p>
